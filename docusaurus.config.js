@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Site Test',
+  title: 'Site Démo',
   tagline: 'Prototype Gestion Documentaire',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
@@ -37,8 +37,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+/*           editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
         },
         blog: false,
       }),
@@ -60,12 +60,31 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentation',
+            label: 'Caractéristiques'
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'doc',
+            docId: 'documents/docs-intro',
+            position: 'left',
+            label: 'Documentation',
+            sidebarId: 'docSidebar'
+          },
+/*           {
+            type: 'doc',
+            docId: 'recherche/recherche-intro',
+            position: 'left',
+            label: 'Recherche'
+          }, */
+/*           {
+            type: 'doc',
+            docId: 'déploiement/déploiement-intro',
+            position: 'left',
+            label: 'Déploiement',
+          }, */
+          {
+            href: 'https://github.com/nicolasbernier-nguyen/my-website',
             label: 'GitHub',
-            position: 'right',
+            position: 'right'
           },
         ],
       },
@@ -73,16 +92,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Tutoriel',
+                to: 'https://docusaurus.io/docs',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Communauté',
             items: [
               {
                 label: 'Stack Overflow',
@@ -92,22 +111,14 @@ const config = {
                 label: 'Discord',
                 href: 'https://discordapp.com/invite/docusaurus',
               },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
             ],
           },
           {
-            title: 'More',
+            title: 'Plus',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/nicolasbernier-nguyen/my-website',
               },
             ],
           },
