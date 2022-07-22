@@ -1,5 +1,0 @@
----
-
----
-# Créer un document
-

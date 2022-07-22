@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Site Démo',
-  tagline: 'Prototype Gestion Documentaire',
+  title: 'Gestion Documentaire',
+  tagline: 'Prototype Site de Documentation',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'IQ', // Usually your GitHub org/user name.
-  projectName: 'gestion documentaire', // Usually your repo name.
+  organizationName: 'Investissement Québec', // Usually your GitHub org/user name.
+  projectName: 'demo-gestion-doc', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -33,8 +33,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/',
-          sidebarPath: require.resolve('./sidebars.js'),
+/*           routeBasePath: '/',
+ */          sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
 /*           editUrl:
@@ -45,9 +45,36 @@ const config = {
     ],
   ],
 
+  plugins: [
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'profils',
+      path: 'profils',
+      routeBasePath: 'profils',
+      sidebarPath: require.resolve('./sidebars.js')
+    }
+  ],
+  [
+    '@docusaurus/plugin-content-docs',
+    {
+      id: 'structurants',
+      path: 'structurants',
+      routeBasePath: 'structurants',
+      sidebarPath: require.resolve('./sidebars.js')
+    }
+  ]
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      docs: {
+        sidebar: {
+          hideable: true,
+          //autoCollapseCategories: true
+        },
+      },
       navbar: {
         title: 'Accueil',
         logo: {
@@ -59,43 +86,36 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: 'Caractéristiques'
+            position: 'right',
+            label: 'Info Doc'
           },
           {
-            type: 'doc',
-            docId: 'documents/docs-intro',
+            to: '/structurants/structurants',
             position: 'left',
-            label: 'Documentation',
-            sidebarId: 'docSidebar'
+            label: 'Structurants',
+            activeBaseRegex: '/structurants'
+          },
+          {
+            to: '/profils/profils',
+            position: 'left',
+            label: 'Profils',
+            activeBaseRegex: '/profils/'
           },
 /*           {
-            type: 'doc',
-            docId: 'recherche/recherche-intro',
-            position: 'left',
-            label: 'Recherche'
-          }, */
-/*           {
-            type: 'doc',
-            docId: 'déploiement/déploiement-intro',
-            position: 'left',
-            label: 'Déploiement',
-          }, */
-          {
             href: 'https://github.com/nicolasbernier-nguyen/my-website',
             label: 'GitHub',
             position: 'right'
-          },
+          }, */
         ],
       },
-      footer: {
+      /* footer: {
         style: 'dark',
         links: [
           {
-            title: 'Documentation',
+            title: 'Doc',
             items: [
               {
-                label: 'Tutoriel',
+                label: 'Documentation',
                 to: 'https://docusaurus.io/docs',
               },
             ],
@@ -106,10 +126,6 @@ const config = {
               {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
               },
             ],
           },
@@ -123,8 +139,8 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
-      },
+        copyright: `Copyright © ${new Date().getFullYear()} Équipe Interface Client (IC)`,
+      }, */
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
