@@ -3,46 +3,17 @@ title: Introduction
 sidebar_position: 0
 ---
 
-# Tutorial Intro
+# Présentation des requis
 
-Let's discover **Docusaurus in less than 5 minutes**.
+La liste de requis suivante nous a poussé à adopter Docusaurus comme solution pour la gestion documentaire:
+1. Architecture agnostique
+2. Facile à mettre en place
+3. Facilité d'entretien
+4. Facilement parteagable
+5. ...
 
-## Getting Started
+Ces requis se réflètent dans les caractéristiques principales de Docusaurus. Il suffit de construire le site, créer une structure de dossiers et la remplir avec des documents Markdown. Le site est ensuite déployé vers l'hébergeur de nôtre choix (Apache 2, Nginx, Netlify, etc.).
 
-Get started by **creating a new site**.
+D'autres caractéristiques de Docusaurus rendent cette solution intéressante, soit l'engin de recherche, la gestion des versions de documents intégrée et l'environnement low-code.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+La documentation qui suit présentera les caractéristiques principales de Docusaurus: l'architecture, la mise en route et le déploiement. D'autres fonctionalités pertinentes seront abordées en détails, dont l'engin de recherche, la création de documents, la personalisation du site et les fonctionalités de Markdown.
