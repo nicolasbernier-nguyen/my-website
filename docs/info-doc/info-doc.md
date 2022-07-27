@@ -1,7 +1,6 @@
 ---
-id: docs-intro
 title: Documentation
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # Introduction à la documentation
@@ -13,6 +12,6 @@ La fonction documents permet aux utilisateurs d'organiser leurs fichiers Markdow
 3. [Versions](./docs-versions)
 4. [Instances de plugin](./docs-plugins)
 
-En plus de vous introduire aux fonctionnalités ci-dessus, la documentation suivante vous présentera les différentes [fonctionnalités de Markdown](./docs-fonctionnalités-md), soit le style et la mise en page, la création d'onglets, d'admonitions et de blocs de code.
+En plus de vous introduire aux fonctionnalités ci-dessus, la documentation suivante vous présentera les différentes [fonctionnalités de Markdown](./fonctions-md/fonctions-md.md), soit le style et la mise en page, la création d'onglets, d'admonitions et de blocs de code.
 
  

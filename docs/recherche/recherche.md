@@ -1,7 +1,7 @@
 ---
-id: recherche-intro
 title: Recherche
-sidebar_position: 3
+sidebar_position: 4
 ---
+
 # Typesense DocSearch
 

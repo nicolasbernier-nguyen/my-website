@@ -108,7 +108,7 @@ const config = {
           }, */
         ],
       },
-      /* footer: {
+      footer: {
         style: 'dark',
         links: [
           {
@@ -140,7 +140,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Équipe Interface Client (IC)`,
-      }, */
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

@@ -19,7 +19,7 @@ Les fichiers Markdown peuvent être éditer à l'aide d'un éditeur de Markdown 
 :::
 
 ## Tags de document
-Vous pouvez introduire des tags à vos documents, ce qui permet d'ajouter une dimension de catégorisation supplémentaire. Les tags sont inscrits dans le [frontmatter](./docs-fonctionnalit%C3%A9s-md.md) du document comme suit:
+Vous pouvez introduire des tags à vos documents, ce qui permet d'ajouter une dimension de catégorisation supplémentaire. Les tags sont inscrits dans le [frontmatter](../info-doc/fonctions-md/fonctions-md.md) du document comme suit:
 
 ```md title="exemple.md"
 ---
