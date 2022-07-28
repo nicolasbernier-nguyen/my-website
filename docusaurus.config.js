@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gestion Documentaire',
   tagline: 'Prototype Site de Documentation',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://demo-gestion-doc.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -65,7 +65,7 @@ const config = {
     }
   ]
   ],
-
+  themes: ['docusaurus-theme-search-typesense'],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -107,6 +107,36 @@ const config = {
             position: 'right'
           }, */
         ],
+      },
+      typesense: {
+        typesenseCollectionName: 'demo-gestion-doc', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
+        
+        typesenseServerConfig: {
+          nodes: [
+            {
+              host: 'xxx-1.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+            {
+              host: 'xxx-2.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+            {
+              host: 'xxx-3.a1.typesense.net',
+              port: 443,
+              protocol: 'https',
+            },
+          ],
+          apiKey: 'xyz',
+        },
+  
+        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/search.md#search-parameters
+        typesenseSearchParameters: {},
+  
+        // Optional
+        contextualSearch: true,
       },
       footer: {
         style: 'dark',
