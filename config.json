@@ -1,9 +1,8 @@
 {
   "index_name": "demo-gestion-doc",
   "start_urls": [
-    "https://host.docker.internal/"
+    "http://host.docker.internal/"
   ],
-  "sitemap_alternate_links": true,
   "stop_urls": [],
   "selectors": {
     "lvl0": {
