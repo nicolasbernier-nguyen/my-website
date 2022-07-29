@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gestion Documentaire',
   tagline: 'Prototype Site de Documentation',
-  url: 'https://demo-gestion-doc.com',
+  url: 'http://localhost:3000/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
