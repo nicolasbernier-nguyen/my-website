@@ -114,20 +114,20 @@ const config = {
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'xxx-1.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
+              host: 'localhost',
+              port: 8108,
+              protocol: 'http',
             },
-            {
+/*             {
               host: 'xxx-2.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
+              port: 8108,
+              protocol: 'http',
             },
             {
               host: 'xxx-3.a1.typesense.net',
-              port: 443,
-              protocol: 'https',
-            },
+              port: 8108,
+              protocol: 'http',
+            }, */
           ],
           apiKey: 'xyz',
         },

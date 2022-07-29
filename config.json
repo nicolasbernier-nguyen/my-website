@@ -1,15 +1,14 @@
 {
   "index_name": "demo-gestion-doc",
-  "start_urls": ["http://localhost:3000/"],
-  "stop_urls": [],
+  "start_urls": ["http://host.docker.internal"],
   "selectors": {
-    "lvl0": "#content header h1",
-    "lvl1": "#content article h1",
-    "lvl2": "#content section h3",
-    "lvl3": "#content section h4",
-    "lvl4": "#content section h5",
-    "lvl5": "#content section h6",
-    "text": "#content header p,#content section p,#content section ol"
+    "lvl0": ".content___default h1",
+    "lvl1": ".content___default h2",
+    "lvl2": ".content___default h3",
+    "lvl3": ".content___default h4",
+    "lvl4": ".content___default h5",
+    "lvl5": ".content___default h6",
+    "text": ".content___default p, .content___default li"
   },
   "strip_chars": " .,;:#"
 }
