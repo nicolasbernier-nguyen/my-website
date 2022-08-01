@@ -104,9 +104,9 @@ const config = {
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'localhost',
+              host: 'demo-gestion-doc.netlify.app',
               port: 8108,
-              protocol: 'http',
+              protocol: 'https',
             },
 /*             {
               host: 'xxx-2.a1.typesense.net',
