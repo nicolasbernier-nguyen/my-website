@@ -60,7 +60,15 @@ const config = {
     }
   ]
   ],
-  themes: ['docusaurus-theme-search-typesense'],
+  /* themes: ['docusaurus-theme-search-typesense'], */
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -98,7 +106,7 @@ const config = {
           },
         ],
       },
-      typesense: {
+/*       typesense: {
         typesenseCollectionName: 'demo-gestion-doc', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
         
         typesenseServerConfig: {
@@ -106,24 +114,14 @@ const config = {
             {
               host: 'host.docker.internal',
               port: 8108,
-              protocol: 'http',
-            },
-/*             {
-              host: 'xxx-2.a1.typesense.net',
-              port: 8108,
               protocol: 'https',
             },
-            {
-              host: 'xxx-3.a1.typesense.net',
-              port: 8108,
-              protocol: 'https',
-            }, */
           ],
           apiKey: 'xyz',
         },
           typesenseSearchParameters: {},
         contextualSearch: true,
-      },
+      }, */
 /*       footer: {
         style: 'dark',
         links: [
