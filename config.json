@@ -1,7 +1,7 @@
 {
   "index_name": "demo-gestion-doc",
   "start_urls": [
-    "http://host.docker.internal/"
+    "https://demo-gestion-doc.netlify.app"
   ],
   "stop_urls": [],
   "selectors": {
@@ -34,9 +34,5 @@
       "url_without_anchor",
       "type"
     ]
-  },
-  "conversation_id": [
-    "1090805758"
-  ],
-  "nb_hits": 8687
+  }
 }

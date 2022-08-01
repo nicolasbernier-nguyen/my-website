@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Gestion Documentaire',
   tagline: 'Prototype Site de Documentation',
-  url: 'http://host.docker.internal:3000/',
+  url: 'https://demo-gestion-doc.netlify.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,12 +33,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-/*           routeBasePath: '/',
- */          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-/*           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/', */
+         sidebarPath: require.resolve('./sidebars.js'),
         },
         blog: false,
       }),
@@ -101,11 +96,6 @@ const config = {
             label: 'Profils',
             activeBaseRegex: '/profils/'
           },
-/*           {
-            href: 'https://github.com/nicolasbernier-nguyen/my-website',
-            label: 'GitHub',
-            position: 'right'
-          }, */
         ],
       },
       typesense: {
@@ -131,14 +121,10 @@ const config = {
           ],
           apiKey: 'xyz',
         },
-  
-        // Optional: Typesense search parameters: https://typesense.org/docs/0.21.0/api/search.md#search-parameters
-        typesenseSearchParameters: {},
-  
-        // Optional
+          typesenseSearchParameters: {},
         contextualSearch: true,
       },
-      footer: {
+/*       footer: {
         style: 'dark',
         links: [
           {
@@ -170,7 +156,7 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} Équipe Interface Client (IC)`,
-      },
+      }, */
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

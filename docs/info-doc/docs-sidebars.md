@@ -69,6 +69,7 @@ docs
 │   └── doc3-2.md
 │   └── doc3-3.md
 ```
+
 Une barre latérale générée automatiquement selon la structure de fichiers ci-dessus aura l'air de ceci: 
 
 ```mdx-code-block

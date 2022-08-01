@@ -54,7 +54,7 @@ my-website # répertoire racine du site web
 ```
 
 - `blog` contient les fichiers Markdown du blog. Puisque cette documentation concerne les documents vous pouvez supprimer ce répertoire (voir [mode-docs seulement]) 
-- `docs` contient les fichiers Markdown de la documentation. Consulter la documentation sur les [documents] pour en savoir plus
+- `docs` contient les fichiers Markdown de la documentation. Consulter la documentation sur les [documents](../intro.md) pour en savoir plus
 - `src` contient les fichiers de non-documentation comme les pages ou les composants React personalisés
     - `src/components` contient le fichier `index.js` qui définit la structure de la page d'accueil (voir [lien])
     - `src/css` contient le fichier `custom.css` qui définit les couleurs de votre site
