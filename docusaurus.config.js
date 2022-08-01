@@ -104,11 +104,11 @@ const config = {
         typesenseServerConfig: {
           nodes: [
             {
-              host: 'xxx-1.a1.typesense.net',
+              host: 'host.docker.internal',
               port: 8108,
-              protocol: 'https',
+              protocol: 'http',
             },
-            {
+/*             {
               host: 'xxx-2.a1.typesense.net',
               port: 8108,
               protocol: 'https',
@@ -117,7 +117,7 @@ const config = {
               host: 'xxx-3.a1.typesense.net',
               port: 8108,
               protocol: 'https',
-            },
+            }, */
           ],
           apiKey: 'xyz',
         },
