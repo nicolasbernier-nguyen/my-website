@@ -1,5 +1,5 @@
 ---
-title: Documentation
+title: Documents
 sidebar_position: 3
 ---
 

@@ -5,9 +5,9 @@ sidebar_position: 1
 # Configuration de Typesense DocSearch (Dev)
 
 Le lancement de l'engin de recherche Typesense DocSearch sur votre site Web se fait en trois étapes:
-- [Éxécuter Typesense](./recherche-config.md#éxécuter-typesense)
-- [Éxécuter le scraper](./recherche-config.md#éxécuter-le-scraper)
-- [Ajouter l'élément UI à votre site](./recherche-config.md#ajouter-lélément-ui)
+- [Éxécuter Typesense](./recherche-config-dev.md#éxécuter-typesense)
+- [Éxécuter le scraper](./recherche-config-dev.md#éxécuter-le-scraper)
+- [Ajouter l'élément UI à votre site](./recherche-config-dev.md#ajouter-lélément-ui)
 
 L'installation de l'engin de recherche sur Windows 10 requiert [Docker](https://docs.docker.com/get-docker/), [jq](https://stedolan.github.io/jq/download/) et [Git Bash](https://git-scm.com/downloads).
 

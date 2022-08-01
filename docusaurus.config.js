@@ -122,39 +122,10 @@ const config = {
           typesenseSearchParameters: {},
         contextualSearch: true,
       }, */
-/*       footer: {
+      footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Doc',
-            items: [
-              {
-                label: 'Documentation',
-                to: 'https://docusaurus.io/docs',
-              },
-            ],
-          },
-          {
-            title: 'Communauté',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'Plus',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/nicolasbernier-nguyen/my-website',
-              },
-            ],
-          },
-        ],
         copyright: `Copyright © ${new Date().getFullYear()} Équipe Interface Client (IC)`,
-      }, */
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
