@@ -16,7 +16,7 @@ Je recommande l'installation de jq à l'aide de [Chocolatey](https://chocolatey.
 :::
 
 :::info
-Les étapes d'installation et d'éxécution de Typesense DocSeach dans se document sont à des fins de développement seulement. Pour la configuration de Typesense pour le déploiement du site sur un hébergeur, référez-vous à ce [document](./recherche-config-deploy)
+Les étapes d'installation et d'éxécution de Typesense DocSeach dans se document sont à des fins de développement seulement. Pour la configuration de Typesense pour le déploiement du site sur un hébergeur, référez-vous à ce [document]
 :::
 
 ## Éxécuter Typesense
