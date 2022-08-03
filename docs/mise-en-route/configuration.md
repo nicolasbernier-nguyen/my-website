@@ -96,11 +96,11 @@ module.exports = config;
 
 ## Métadonnées du site
 
-Les métadonnées du site contiennent les métadonnées globales et essentielles tel que `title`, `url`,`baseUrl` et `favicon`. Ces métadonnées représente le titre de votre site, l'icône de l'onglet du navigateur et l'URL de votre site lorsque qu'il est déployé
+Les métadonnées du site contiennent les métadonnées globales et essentielles tel que `title`, `url`, `baseUrl` et `favicon`. Ces métadonnées représente le titre de votre site, l'icône de l'onglet du navigateur et l'URL de votre site lorsque qu'il est déployé
 
 ## Configuration de déploiement
 
-Les configurations de déploiement `projectName`, `organizationName` et optionnellement `deploymentBranch` sont utilisées lors du déploiement de votre site avec la commande `deploy`. Vous pouvez consulter la [documentation sur le déploiement](../deploy/deploy.md) pour en savoirs d'avantage.
+Les configurations de déploiement `projectName`, `organizationName` et optionnellement `deploymentBranch` sont utilisées lors du déploiement de votre site avec la commande `deploy`. Ne faite qu'insérer le nom de votre projet et le nom de votre organisation dans leurs champs respectifs.
 
 ## Thème, plugins et configuration prédéfinie
 
@@ -148,6 +148,8 @@ const config = {
 };
 module.export = config;
 ```
+
+Référez-vous à la documentation sur le plugin [`plugin-content-docs`](../info-doc/docs-plugins.md) pour plus de détails.
 
 Pour spécifier des options pour un plugin ou un thème fournit dans une configuration prédéfinie, passez les options dans le champs `presets`. Ici, `docs` fait référence à `@docusaurus/plugin-content-docs` et `theme`, `@docusaurus/theme-classic`.
 

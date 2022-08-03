@@ -20,14 +20,14 @@ import ThemedImage from '@theme/ThemedImage';
 ```
 Le plugin de docs créer des routes imbriquées. Au plus haut niveau, les chemins de versions sont enregistrés: `/`, `/next`, `/1.1.0-beta.9`... ce qui fournit le contexte pour la mise en page et la barre latérale. Le composant utilisé est `@theme/DocPage`.
 
-Les documents remplissent l'espace restant de la page après que les composantes (barre de navigation, barre latérale, pied de page, etc.) sont fournies par `DocPage`. Prenons exemple sur cette page. Si la gestion des version était mise en place, cette page `/docs/architecture/` pourrait être générée à partir du fichier `./versioned_docs/version-1.0/architecture/architecture.md`. Dans le cas actuel, elle générée à partir du fichier `./docs/architecture/architecture.md`.
+Les documents remplissent l'espace restant de la page après que les composantes (barre de navigation, barre latérale, pied de page, etc.) sont fournies par `DocPage`. Prenons exemple sur cette page. Si la gestion des version était mise en place, cette page `/docs/architecture/` pourrait être générée à partir du fichier `./versioned_docs/version-1.0/architecture/architecture.md`. Dans le cas actuel, elle est générée à partir du fichier `./docs/architecture/architecture.md`.
 
 ## Chemins des fichiers et des URL
 
 Les plugins de contenu, soit le plugin de docs, mappent les chemins de fichiers directement aux chemins d'URL (`./docs/info-doc/créer-document.md` devient `docs/info-doc/créer-document`). Cependant, losque l'ont écrit des liens dans un fichier Markdown, il s'agit d'un **chemin d'accès à un fichier** ou d'un **chemin d'accès à un URL**. Docusaurus différentit ces deux cas en appliquant les règles suivantes:
 - Si le chemin a un préfixe `@site`, c'est toujours un chemin de fichier de ressource
 - Si le chemin a un préfixe `http(s)://`, c'est toujours un chemin d'URL
-- Si le chemin n'a pas d'extension, c'est un chemin d'URL. Un lien `[link](../plugins)` sur une page avec l'URL `/docs/advanced/routing` sera lié à `/docs/plugins`.
+- Si le chemin n'a pas d'extension, c'est un chemin d'URL. Un lien `[link](../info-doc)` sur une page avec l'URL `/docs/architecture/routage` sera lié à `/docs/info-doc`.
 - Si le chemin a une extension `.md(x)`, Docusaurus essaiera de résoudre le fichier Markdown en un URL.
 - Si le chemin a une autre extension, Docusaurus le traitera comme [une ressource](../info-doc/fonctions-md/ressources).
 

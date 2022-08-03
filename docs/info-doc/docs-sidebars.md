@@ -23,15 +23,15 @@ presets: [
   ],
 ```
 :::note
-Si vous utilisez le plugin [`@docusaurus/plugin-content-docs`](./docs-plugins.md) en plus, il faut aussi spécifier le fichier de sidebar à utiliser.
+Si vous utilisez aussi le plugin [`@docusaurus/plugin-content-docs`](./docs-plugins.md), il faut aussi spécifier le fichier de sidebar à utiliser.
 ```js title="docusaurus.config.js"
 plugins: [
   [
     '@docusaurus/plugin-content-docs',
     {
-      id: 'content-docs',
-      path: 'content-docs',
-      routeBasePath: 'content-docs',
+      id: 'docId1',
+      path: 'dossier1',
+      routeBasePath: 'dossier1',
       sidebarPath: require.resolve('./sidebars.js')
     }
   ],
@@ -94,5 +94,40 @@ Docusaurus peut lier automatiquement une catégorie à son document d'index. C'e
 - Nommé `README` (non sensible à la casse): `docs/intro/readme.mdx`
 - Nommé `index` (non sensible à la casse): `docs/intro/index.md`
 
-### Métadonné de l'élément doc
+### Métadonnées de l'élément doc
 
+Vous pouvez insérer des métadonnées à votre document par le biais du [frontmatter](./fonctions-md/frontmatter.md). Vous pouvez spécifier la position et le titre du document dans la barre latérale avec `sidebar_position = #` et `sidebar_label = titre`, respectivement.
+
+```md title="exemple.md"
+---
+sidebar_position = 2
+sidebar_label = Exemple
+---
+
+# Titre 1
+ 
+Lorem Ipsum
+```
+
+### Métadonnées de l'élément catégorie
+
+**En Construction**
+
+### Organisation à l'aide des préfixes de nombre
+
+Une autre façon d'organiser vos fichiers dans le répertoire `/docs` pour qu'ils apparaissent dans l'ordre désiré dans votre sidebar, est d'utiliser des préfixes de nombre. Par défaut, Docusaurus supprimera les préfixes de nombres pour ne pas qu'ils apparaissent lors de la publication.
+
+```
+docs
+├── 01-Intro.md
+├── 02-Dossier-1
+│   ├── 01-Doc-1.md
+│   ├── 02-Doc-2.md
+│   └── 03-Conclusion.md
+├── 03-Dossier-2
+│   ├── 01-Doc-3.md
+│   ├── 02-Doc-4.md
+│   ├── 03-Doc-5.md
+│   └── 04-Conclusion.md
+└── 04-Conclusion.md
+```

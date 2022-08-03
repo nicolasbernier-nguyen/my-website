@@ -85,6 +85,7 @@ const config = {
           src: 'img/logoIQ_light.png',
           srcDark: 'img/logoIQ_dark.png',
         },
+        hideOnScroll: true,
         items: [
           {
             type: 'doc',
@@ -96,13 +97,13 @@ const config = {
             to: '/structurants/structurants',
             position: 'left',
             label: 'Structurants',
-            activeBaseRegex: '/structurants'
+            /* activeBaseRegex: '/structurants' */
           },
           {
             to: '/profils/profils',
             position: 'left',
             label: 'Profils',
-            activeBaseRegex: '/profils/'
+            /* activeBaseRegex: '/profils/' */
           },
         ],
       },

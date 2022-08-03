@@ -73,11 +73,11 @@ Il est possible de lancer un serveur de développement local pour visualiser les
 npm run start
 ```
 
-Par défaut, une fenêtre s'ouvrira depuis l'addresse `http://localhost:3000`. Pour fermer le serveur de développement appuyez les touches `Ctrl+C`. Dans la fenêtre de commande, vous êtes invité à acquiescer (`O`) ou non (`N`) la fermeture du serveur.
+Par défaut, une fenêtre s'ouvrira depuis l'addresse `http://localhost:3000`. Pour fermer le serveur de développement appuyez les touches `Ctrl+C` dans la fenêtre de commande. Vous serez invité à acquiescer (`O`) ou non (`N`) la fermeture du serveur.
 
 ## Construction
 
-Pour que notre site puisse être consulté, nous devous le construire dans un répertoire de contenu statique et le déployer sur un serveur web. Pour le construire:
+Pour que notre site puisse être consulté, nous devons le construire dans un répertoire de contenu statique et le déployer sur un serveur web. Pour le construire:
 
 ```
 npm run build

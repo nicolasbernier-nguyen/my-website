@@ -10,7 +10,6 @@ La liste de requis suivante nous a poussé à adopter Docusaurus comme solution 
 2. Facile à mettre en place
 3. Facilité d'entretien
 4. Facilement parteagable
-5. ...
 
 Ces requis se réflètent dans les caractéristiques principales de Docusaurus. Il suffit de construire le site, créer une structure de dossiers et la remplir avec des documents Markdown. Le site est ensuite déployé vers l'hébergeur de nôtre choix (Apache 2, Nginx, Netlify, etc.).
 

@@ -4,42 +4,38 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Titre 1',
+    title: "La documentation c'est facile",
     Svg: require('@site/static/img/contenu.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Docusaurus nous permets de nous concentrer sur nos documents. Ne faite que déplacer vos documents dans le répertoire <code>docs</code> et le tour est joué.
       </>
     ),
   },
   {
-    title: 'Titre 2',
+    title: 'À la recherche de vos documents',
     Svg: require('@site/static/img/recherche.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Docusaurus est muni d'une multitude d'engins de recherche. Ne faite qu'installer et configurer celui de votre choix et vous ne perdrez jamais vos documents.
       </>
     ),
   },
   {
-    title: 'Titre 3',
+    title: 'Déployer les deux doigts dans le nez',
     Svg: require('@site/static/img/deploiement.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Le déploiement de votre site Docusaurus n'a jamais été aussi facile. Construisez votre site et choissisez l'hébergeur de votre choix. C'est tout!
       </>
     ),
   },
   {
-    title: 'Titre 4',
+    title: 'Gérer vos versions de documents',
     Svg: require('@site/static/img/version.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Docusaurus supporte la gestion des versions documentaire nativement. Il suffit d'une touche pour publier une nouvelle version et archiver l'ancienne.
       </>
     ),
   },
