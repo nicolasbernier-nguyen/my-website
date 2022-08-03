@@ -19,7 +19,7 @@ Les paramètre suivant sont obligatoire dans `docusaurus.config.js`:
 - `url` - URL de votre site. Pour un site déployé sur `https://my-org.com/my-projects/`, `url` est `https://my-org.com`
 - `baseUrl` - URL de base pour votre projet avec un slash de fin. Pour un site déployé sur `https://my-org.com/my-projects/`, `baseUrl` est `/my-projects/`
 
-## Teste la construction localement
+## Tester votre construction localement
 
 Pour tester votre construction avant de la déployer:
 
@@ -58,6 +58,6 @@ Si vous n'avez pas configuré ces options, vous pouvez aller dans "Site settings
 
 ## Utiliser des pipelines Azure
 
-En construction
+**En construction**
 
 Visitez ce [lien](https://docusaurus.io/fr/docs/deployment#using-azure-pipelines) pour plus d'information.

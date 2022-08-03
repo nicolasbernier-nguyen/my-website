@@ -87,6 +87,6 @@ module.exports = config;
 
 **En Construction**
 
-## Élément de la barre de navigation
+## Éléments de la barre de navigation
 
 **En Construction**

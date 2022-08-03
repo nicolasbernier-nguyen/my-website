@@ -12,11 +12,11 @@ Le lancement de l'engin de recherche Typesense DocSearch sur votre site Web se f
 L'installation de l'engin de recherche sur Windows 10 requiert [Docker](https://docs.docker.com/get-docker/), [jq](https://stedolan.github.io/jq/download/) et [Git Bash](https://git-scm.com/downloads).
 
 :::tip
-Je recommande l'installation de jq à l'aide de [Chocolatey](https://chocolatey.org/install#install-step2)
+Je recommande l'installation de jq à l'aide de [Chocolatey](https://chocolatey.org/install#install-step2).
 :::
 
 :::info
-Les étapes d'installation et d'éxécution de Typesense DocSeach dans se document sont à des fins de développement seulement. Pour la configuration de Typesense pour le déploiement du site sur un hébergeur, référez-vous à ce [document]
+Les étapes d'installation et d'exécution de Typesense DocSeach dans ce document sont à des fins de développement seulement. Pour la configuration de Typesense pour le déploiement du site sur un hébergeur, référez ce [document](./recherche-config-deploy.md).
 :::
 
 ## Éxécuter Typesense

@@ -38,3 +38,26 @@ Le fichier `version.json` contient une liste de noms de version. ordonée du plu
 | `versioned_docs/version-1.1.0/hello.md` | 1.1.0 (latest) | /docs/hello       |
 | `docs/hello.md`                         | current        | /docs/next/hello  |
 
+## Tutoriel
+
+### Créer une nouvelle version
+
+**En Construction**
+
+### Créer de nouveaux documents
+
+**En Construction**
+
+### Mise à jour d'une version existante
+
+**En Construction**
+
+### Supprimer une version existante
+
+**En Construction**
+
+## Configuration du comportement des versions
+
+**En Construction**
+
+## Éléments de la barre de navigation
