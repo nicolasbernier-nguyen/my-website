@@ -10,7 +10,6 @@ La liste de requis suivante nous a poussé à adopter Docusaurus comme solution 
 2. Facile à configurer
 3. Peu d'entretien
 4. Bien documenté
-5. 
 
 Ces requis se réflètent dans les caractéristiques principales de Docusaurus. Il suffit de construire le site, créer une structure de dossiers et la remplir avec des documents Markdown. Le site est ensuite déployé vers l'hébergeur de nôtre choix (Apache 2, Nginx, Netlify, etc.).
 
@@ -18,11 +17,11 @@ D'autres caractéristiques de Docusaurus rendent cette solution intéressante, s
 
 La documentation qui suit présentera les caractéristiques principales de Docusaurus: l'architecture, la mise en route et le déploiement. D'autres fonctionalités pertinentes seront abordées en détails, dont l'engin de recherche, la création de documents, la personalisation du site et les fonctionalités de Markdown.
 
-## Comparaison avec d'autre produit
+## Alternatives
 
 ### Gatsby
 
-[Gatsby](https://www.gatsbyjs.com/) 
+[Gatsby](https://www.gatsbyjs.com/) est l'un des générateurs de site statique les mieux garnis, avec un grand nombre de fonctionnalités, un riche écosystème de plugins et une intégration native avec GraphQL à son coeur. Cependant, cette panoplie de fonctionnalités vient avec une plus grande courbe d'apprentissage. Gatbsy nous permet de construire plus qu'un site de documentation.
 
 ### VuePress
 
@@ -36,4 +35,4 @@ La documentation qui suit présentera les caractéristiques principales de Docus
 
 ### Jekyll
 
-[Jekyll]()
+[Jekyll](https://github.com/jekyll/jekyll) est l'un des générateurs de sites statiques les plus matures et populaires. Démarrer le développement d'un site avec Jekyll est une expérience similaire à Docusaurus. Jekyll utilise Liquid pour le _templating_ au lieu de JSX(React) et offre une grande variété de thèmes. Cependant, comparé à Docusaurus, la documentation de Jekyll n'est pas aussi claire et requiert un peu plus de connaissances en CSS et en HTML.
