@@ -59,5 +59,3 @@ Si vous n'avez pas configuré ces options, vous pouvez aller dans "Site settings
 ## Utiliser des pipelines Azure
 
 **En construction**
-
-Visitez ce [lien](https://docusaurus.io/fr/docs/deployment#using-azure-pipelines) pour plus d'information.

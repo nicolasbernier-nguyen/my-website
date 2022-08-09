@@ -36,3 +36,7 @@ La documentation qui suit présentera les caractéristiques principales de Docus
 ### Jekyll
 
 [Jekyll](https://github.com/jekyll/jekyll) est l'un des générateurs de sites statiques les plus matures et populaires. Démarrer le développement d'un site avec Jekyll est une expérience similaire à Docusaurus. Jekyll utilise Liquid pour le _templating_ au lieu de JSX(React) et offre une grande variété de thèmes. Cependant, comparé à Docusaurus, la documentation de Jekyll n'est pas aussi claire et requiert un peu plus de connaissances en CSS et en HTML.
+
+## L'avantage de Docusaurus
+
+Le plus grand avantage que Docusaurus a sur les alternatives présentées ci-dessus est le peu d'entretien qu'un site documentaire Docusaurus requiert. Cet avantage provient de la capacité à Docusaurus de générer automatiquement les barres latérales de navigation, un trait qu'aucun notre générateur de site statique ne possède. Ceci permet à un utilisateur de tout simplement mettre ses documents dans le répertoire approprié et Docusaurus s'occupe du reste. Pas besoin de perdre son temps à jouer avec les fichiers de barre latérale pour les mettre à jour.
