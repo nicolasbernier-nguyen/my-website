@@ -111,7 +111,65 @@ Lorem Ipsum
 
 ### Métadonnées de l'élément catégorie
 
-**En Construction**
+Ajouter un fichier `_category_.json` ou `_category_.yml` dans le dossier respectif. Vous pouvez spécifier les métadonnées de la catégorie ainsi que les métadonnées de la `position`.  `label`, `className`, `position` et `customProps` seront par défaut les valeurs respectives du doc lié à la catégorie, s'il y en a une.
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="JSON">
+
+```json title="docs/tutorials/_category_.json"
+{
+  "position": 2.5,
+  "label": "Tutorial",
+  "collapsible": true,
+  "collapsed": false,
+  "className": "red",
+  "link": {
+    "type": "generated-index",
+    "title": "Tutorial overview"
+  },
+  "customProps": {
+    "description": "This description can be used in the swizzled DocCard"
+  }
+}
+```
+
+</TabItem>
+<TabItem value="YAML">
+
+```yml title="docs/tutorials/_category_.yml"
+position: 2.5 # float position is supported
+label: 'Tutorial'
+collapsible: true # make the category collapsible
+collapsed: false # keep the category open by default
+className: red
+link:
+  type: generated-index
+  title: Tutorial overview
+customProps:
+  description: This description can be used in the swizzled DocCard
+```
+
+</TabItem>
+</Tabs>
+
+:::info
+
+Si `link` est explicitement spécifié, Docusaurus n'appliquera aucune convention par défaut.
+
+Les liens vers les docs peuvent être spécifiés de manière relative, par exemple, si la catégorie est générée avec le répertoire `guides`, `"link": {"type": "doc", "id": "intro"}` sera résolu vers l'ID `guides/intro`, ne retombant sur `intro` que si un doc avec l'ancien ID n'existe pas.
+
+Vous pouvez également utiliser `link : null` pour ne pas respecter les conventions par défaut et ne pas générer de page d'index de catégorie.
+
+:::
+
+:::info
+
+Les métadonnées de position ne sont utilisées **qu'à l'intérieur d'une section de barre latérale** : Docusaurus ne réorganise pas les autres éléments de votre barre latérale.
+
+:::
 
 ### Organisation à l'aide des préfixes de nombre
 
