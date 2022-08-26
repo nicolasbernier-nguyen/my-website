@@ -96,7 +96,7 @@ Docusaurus peut lier automatiquement une catégorie à son document d'index. C'e
 
 ### Métadonnées de l'élément doc
 
-Vous pouvez insérer des métadonnées à votre document par le biais du [frontmatter](./fonctions-md/frontmatter.md). Vous pouvez spécifier la position et le titre du document dans la barre latérale avec `sidebar_position = #` et `sidebar_label = titre`, respectivement.
+Vous pouvez insérer des métadonnées à votre document par le biais du [frontmatter](./fonctions-md/fonctions-md.md#frontmatter). Vous pouvez spécifier la position et le titre du document dans la barre latérale avec `sidebar_position = #` et `sidebar_label = titre`, respectivement.
 
 ```md title="exemple.md"
 ---

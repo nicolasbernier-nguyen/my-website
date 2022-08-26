@@ -119,4 +119,4 @@ Cependant, Sharepoint a ses défauts et ne rempli pas tous les critères tels qu
 - Peu d'entretien
 - Facile à configurer
 
-De plus, Sharepoint agit plus comme un système de fichier et non un site de documentation. La documentation n'est pas facilement parcourable et accessible.
+De plus, Sharepoint agit plus comme un système de fichier et non un site de documentation. La documentation n'est pas facilement parcourable et accessible.t 
