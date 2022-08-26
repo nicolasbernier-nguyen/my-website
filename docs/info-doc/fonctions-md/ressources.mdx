@@ -1,0 +1,82 @@
+---
+
+---
+
+# Ressources
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+Parfois, vous souhaitez établir un lien vers des ressources (par exemple des fichiers docx, des images...) directement à partir de fichiers Markdown. Les images seront placés dans le dossier `/static/img`.
+
+## Images
+
+```md
+![Exemple d'image](../../../static/img/docusaurus.png)
+```
+
+<BrowserWindow>
+
+![Texte alternatif pour l'image](../../../static/img/docusaurus.png)
+
+</BrowserWindow>
+
+## Fichiers
+
+```md
+# Ma page Markdown
+
+[Télécharger ce docx avec Markdown](../../../static/assets/docusaurus-asset-example.docx)
+```
+
+<BrowserWindow>
+
+[Télécharger ce docx avec Markdown](../../../static/assets/docusaurus-asset-example.docx)
+
+</BrowserWindow>
+
+## SVG
+
+```jsx
+import DocusaurusSvg from './docusaurus.svg';
+
+<DocusaurusSvg />;
+```
+
+<BrowserWindow>
+
+import DocusaurusSvg from '@site/static/img/docusaurus.svg';
+
+<DocusaurusSvg />
+
+</BrowserWindow>
+
+## Images thématiques
+
+
+```jsx
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from '@theme/ThemedImage';
+
+<ThemedImage
+  alt="Docusaurus image thématique"
+  sources={{
+    light: useBaseUrl('/img/docusaurus_keytar.svg'),
+    dark: useBaseUrl('/img/docusaurus_speed.svg'),
+  }}
+/>;
+```
+
+```mdx-code-block
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import ThemedImage from '@theme/ThemedImage';
+
+<BrowserWindow>
+<ThemedImage
+  alt="Docusaurus image thématique"
+  sources={{
+    light: useBaseUrl('/img/docusaurus_keytar.svg'),
+    dark: useBaseUrl('/img/docusaurus_speed.svg'),
+  }}
+/>
+</BrowserWindow>
+```

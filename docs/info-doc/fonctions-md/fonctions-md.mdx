@@ -1,0 +1,272 @@
+---
+sidebar_position: 5
+---
+# Fonctionnalités de Markdown
+
+import BrowserWindow from '@site/src/components/BrowserWindow';
+
+## Fonctionnalités standard
+
+Markdown est une syntaxe vous permettant d'écrire du contenu formaté dans une syntaxe lisible.
+
+Nous utilisons MDX comme moteur d'analyse, qui peut faire bien plus que d'analyser la [syntaxe standard de Markdown](https://daringfireball.net/projects/markdown/syntax), comme le rendu des composants React à l'intérieur de vos documents.
+
+```md
+### My Doc Section
+
+Message « Hello World » avec du texte en **gras**, du texte en _italique_, du texte en `code` et un [lien](/)
+
+![img alt](/img/docusaurus.png)
+```
+
+```mdx-code-block
+<BrowserWindow>
+
+<h3>My Doc Section</h3>
+
+Message « Hello World » avec du texte en **gras**, du texte en _italique_, du texte en `code` et un [lien](/)
+
+![img alt](/img/docusaurus.png)
+
+</BrowserWindow>
+```
+
+## Frontmatter
+
+Le frontmatter est utilisé pour ajouter des métadonnées à votre fichier Markdown. Tous les plugins de contenu ont leur propre schéma de frontmatter, et utilisent le frontmatter pour enrichir les métadonnées par défaut déduites du contenu ou d'une autre configuration.
+
+Le frontmatter est fourni en haut du fichier, entourée de trois tirets ---. Le contenu est analysé comme du YAML.
+
+```md
+---
+title: Mon titre de doc
+plus_de_donnes:
+    - peut être fourni
+    - comme: objets
+      ou: tableau
+---
+```
+
+## Entêtes
+
+```md
+## Titre niveau 2
+
+### Titre niveau 3
+
+#### Titre niveau 4
+```
+
+## Lien Markdown
+
+Il existe deux façons d'ajouter un lien vers une autre page : par un **chemin d'accès à l'URL** et par un **chemin d'accès au fichier**.
+
+```md
+- [chemin d'accès par l'URL vers une autre page web](https://exemple.com)
+- [chemin d'accès par l'URL vers un autre document](./installation)
+- [chemin d'accès par le fichier vers un autre document](./installation.md)
+```
+
+Un exemple, si vous êtes dans docs/dossier/doc1.md et que vous voulez faire référence à docs/dossier/doc2.md, docs/dossier/sous-dossier/doc3.md et docs/autreDossier/doc4.md :
+
+```md title="docs/folder/doc1.md"
+Je fais référence à un [document](doc2.md).
+
+Référence vers un autre [document dans un sous-dossier](sous-dossier/doc3.md).
+
+Le référencement de [document relatif](../autreDossier/doc4.md) fonctionne également.
+```
+
+## Citation
+
+```md
+> Site de Documentation Open Source facile à maintenir.
+>
+> — Docusaurus
+```
+
+<BrowserWindow>
+
+> Site de Documentation Open Source facile à maintenir.
+>
+> — Docusaurus
+
+</BrowserWindow>
+
+## Détails
+
+```md
+### Exemple d'élément de détails
+
+<details>
+  <summary>Basculez moi !</summary>
+  <div>
+    <div>Voici le contenu détaillé</div>
+    <br/>
+    <details>
+      <summary>
+        Interrupteur imbriqué !
+      </summary>
+      <div>
+        😲😲😲😲😲
+      </div>
+    </details>
+  </div>
+</details>
+```
+
+```mdx-code-block
+<BrowserWindow>
+
+<h3>Exemple d'élément de détails</h3>
+
+<details>
+  <summary>Basculez moi !</summary>
+  <div>
+    <div>Voici le contenu détaillé</div>
+    <br/>
+    <details>
+      <summary>
+        Interrupteur imbriqué !
+      </summary>
+      <div>
+        😲😲😲😲😲
+      </div>
+    </details>
+  </div>
+</details>
+
+</BrowserWindow>
+```
+
+## Onglets
+
+```jsx
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="pomme" label="Pomme" default>
+    Ceci est une 🍎
+  </TabItem>
+  <TabItem value="orange" label="Orange">
+    Ceci est une orange 🍊
+  </TabItem>
+  <TabItem value="banane" label="Banane">
+    Ceci est une banane 🍌
+  </TabItem>
+</Tabs>
+```
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+```mdx-code-block
+<BrowserWindow>
+  <Tabs>
+    <TabItem value="apple" label="Pomme">Ceci est une 🍎</TabItem>
+    <TabItem value="orange" label="Orange">Ceci est une orange 🍊</TabItem>
+    <TabItem value="banana" label="Banane">Ceci est une banane 🍌</TabItem>
+  </Tabs>
+</BrowserWindow>
+```
+
+## Admonitions
+
+```md
+:::note
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#).
+
+:::
+
+:::tip
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::info
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::caution
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::danger
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+```
+
+```mdx-code-block
+<BrowserWindow>
+
+:::note
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::tip
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::info
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::caution
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+:::danger
+
+Un peu de **contenu** avec la `syntaxe` _Markdown_. Consultez [cette `api`](#)..
+
+:::
+
+</BrowserWindow>
+```
+
+## Blocs de code
+
+Vous pouvez ajouter un titre au bloc de code en ajoutant une clé `title` après le language (laisser un espace entre les deux).
+
+````md
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+````
+
+```mdx-code-block
+<BrowserWindow>
+```
+
+```jsx title="/src/components/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+```
+
+```mdx-code-block
+</BrowserWindow>
+```
+
+## Fenêtre de navigateur
+
+Pour ajouter des fenêtre de navigateur comme dans cette page, suivez les instructions à ce [lien](https://papa31.github.io/hm/docs/site-generators/docusaurus/add-apple-style-window/).

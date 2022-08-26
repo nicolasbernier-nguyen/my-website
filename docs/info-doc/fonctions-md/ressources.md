@@ -1,7 +1,0 @@
----
-
----
-
-# Ressources
-
-**En Construction**

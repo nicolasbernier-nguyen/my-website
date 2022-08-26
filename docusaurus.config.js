@@ -107,6 +107,23 @@ const config = {
           },
         ],
       },
+      webpack: {
+        jsLoader: (isServer) => ({
+          loader: require.resolve('swc-loader'),
+          options: {
+            jsc: {
+              parser: {
+                syntax: 'typescript',
+                tsx: true,
+              },
+              target: 'es2017',
+            },
+            module: {
+              type: isServer ? 'commonjs' : 'es6',
+            },
+          },
+        }),
+      },
 /*       typesense: {
         typesenseCollectionName: 'demo-gestion-doc', // Replace with your own doc site's name. Should match the collection name in the scraper settings.
         
