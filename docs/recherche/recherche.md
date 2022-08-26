@@ -21,7 +21,9 @@ Il est possible d'utiliser un plugin de recherche locale pour les sites statique
 
 ### Configuration recherche locale
 
-Pour installer la recherche locale, il suffit d'éxécuter le code suivant dans une console à partir du répertoire de votre site, puis ajouter un élément `themes` dans le fichier de configuration `docusaurus.config.js`.
+#### `@easyops-cn`
+
+Pour installer l'engin de recherche locale [`easyops-cn`](), il suffit d'éxécuter le code suivant dans une console à partir du répertoire de votre site, puis ajouter un élément `themes` dans le fichier de configuration `docusaurus.config.js`.
 
 ```
 // exécuter dans le répertoire de votre site
