@@ -29,7 +29,7 @@ Les plugins de contenu, soit le plugin de docs, mappent les chemins de fichiers 
 - Si le chemin a un préfixe `http(s)://`, c'est toujours un chemin d'URL
 - Si le chemin n'a pas d'extension, c'est un chemin d'URL. Un lien `[link](../info-doc)` sur une page avec l'URL `/docs/architecture/routage` sera lié à `/docs/info-doc`.
 - Si le chemin a une extension `.md(x)`, Docusaurus essaiera de résoudre le fichier Markdown en un URL.
-- Si le chemin a une autre extension, Docusaurus le traitera comme [une ressource](../info-doc/fonctions-md/ressources).
+- Si le chemin a une autre extension, Docusaurus le traitera comme [une ressource](../info-doc/fonctions-md/ressources.mdx).
 
 ## Conversion en fichiers HTML
 

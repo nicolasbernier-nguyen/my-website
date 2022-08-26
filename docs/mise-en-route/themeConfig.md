@@ -50,7 +50,7 @@ const config = {
 - `items` - une collection d'onglets sur la barre de navigation
     - `label` - le titre de votre onglet
     - `position` - la position de l'onglet, soit à gauche ( `left`) soit à droite (`right`) 
-    - `docId` - le _ID_ du document qui agiera comme document d'accueil lorsque vous cliquer sur l'onglet de la barre de navigation. Voir [frontmatter](../info-doc/fonctions-md/fonctions-md.md#frontmatter)
+    - `docId` - le _ID_ du document qui agiera comme document d'accueil lorsque vous cliquer sur l'onglet de la barre de navigation. Voir [frontmatter](../info-doc/fonctions-md/fonctions-md.mdx#frontmatter)
     - `type` - le type de contenu couvert sous l'onglet. Dans notre cas toujours mettre `doc`
 
 :::info
